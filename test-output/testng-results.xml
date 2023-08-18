@@ -1,37 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-17T05:54:00 GMT" name="SampleSuite" finished-at="2023-08-17T05:54:14 GMT" duration-ms="14332">
+  <suite started-at="2023-08-18T07:17:33 GMT" name="Default suite" finished-at="2023-08-18T07:17:46 GMT" duration-ms="12851">
     <groups>
     </groups>
-    <test started-at="2023-08-17T05:54:00 GMT" name="ModuleOneTest" finished-at="2023-08-17T05:54:09 GMT" duration-ms="9357">
-      <class name="testScripts.GooglePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.GooglePageTest@428640fa]" started-at="2023-08-17T05:54:00 GMT" name="setUp" finished-at="2023-08-17T05:54:03 GMT" duration-ms="2828" status="PASS">
+    <test started-at="2023-08-18T07:17:33 GMT" name="Default test" finished-at="2023-08-18T07:17:46 GMT" duration-ms="12851">
+      <class name="testScripts.SampleTest">
+        <test-method is-config="true" signature="setupExtent()[pri:0, instance:testScripts.SampleTest@52af26ee]" started-at="2023-08-18T07:17:33 GMT" name="setupExtent" finished-at="2023-08-18T07:17:34 GMT" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupExtent -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.SampleTest@52af26ee]" started-at="2023-08-18T07:17:34 GMT" name="setUp" finished-at="2023-08-18T07:17:36 GMT" duration-ms="2590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchJavaTest()[pri:0, instance:testScripts.GooglePageTest@428640fa]" started-at="2023-08-17T05:54:03 GMT" name="searchJavaTest" finished-at="2023-08-17T05:54:08 GMT" duration-ms="4782" status="PASS">
+        <test-method signature="searchCucumberTest()[pri:0, instance:testScripts.SampleTest@52af26ee]" started-at="2023-08-18T07:17:36 GMT" name="searchCucumberTest" finished-at="2023-08-18T07:17:40 GMT" duration-ms="3709" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Cucumber Tutorial - Google Search] but found [Cucumber Tutorials - Google Search]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Cucumber Tutorial - Google Search] but found [Cucumber Tutorials - Google Search]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at testScripts.SampleTest.searchCucumberTest(SampleTest.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchJavaTest -->
-        <test-method signature="searchSeleniumTest()[pri:0, instance:testScripts.GooglePageTest@428640fa]" started-at="2023-08-17T05:54:08 GMT" name="searchSeleniumTest" finished-at="2023-08-17T05:54:09 GMT" duration-ms="1552" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchSeleniumTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testScripts.GooglePageTest@428640fa]" started-at="2023-08-17T05:54:09 GMT" name="tearDown" finished-at="2023-08-17T05:54:09 GMT" duration-ms="125" status="PASS">
+        </test-method> <!-- searchCucumberTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.SampleTest@52af26ee]" started-at="2023-08-18T07:17:40 GMT" name="tearDown" finished-at="2023-08-18T07:17:40 GMT" duration-ms="173" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchCucumberTest status=FAILURE method=SampleTest.searchCucumberTest()[pri:0, instance:testScripts.SampleTest@52af26ee] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testScripts.GooglePageTest -->
-    </test> <!-- ModuleOneTest -->
-    <test started-at="2023-08-17T05:54:09 GMT" name="ModuleTwoTest" finished-at="2023-08-17T05:54:14 GMT" duration-ms="4872">
-      <class name="testScripts.SampleTest">
-        <test-method signature="searchCypressTest()[pri:0, instance:testScripts.SampleTest@3646a422]" started-at="2023-08-17T05:54:09 GMT" name="searchCypressTest" finished-at="2023-08-17T05:54:14 GMT" duration-ms="4867" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testScripts.SampleTest@52af26ee]" started-at="2023-08-18T07:17:40 GMT" name="setUp" finished-at="2023-08-18T07:17:42 GMT" duration-ms="1244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchCypressTest()[pri:0, instance:testScripts.SampleTest@52af26ee]" started-at="2023-08-18T07:17:42 GMT" name="searchCypressTest" finished-at="2023-08-18T07:17:46 GMT" duration-ms="4189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchCypressTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.SampleTest@52af26ee]" started-at="2023-08-18T07:17:46 GMT" name="tearDown" finished-at="2023-08-18T07:17:46 GMT" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchCypressTest status=SUCCESS method=SampleTest.searchCypressTest()[pri:0, instance:testScripts.SampleTest@52af26ee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="finishExtent()[pri:0, instance:testScripts.SampleTest@52af26ee]" started-at="2023-08-18T07:17:46 GMT" name="finishExtent" finished-at="2023-08-18T07:17:46 GMT" duration-ms="430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishExtent -->
       </class> <!-- testScripts.SampleTest -->
-    </test> <!-- ModuleTwoTest -->
-  </suite> <!-- SampleSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
