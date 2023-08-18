@@ -19,6 +19,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
+import commonUtilis.Utility;
+
 public class SampleTest {
 	WebDriver driver;
 	ExtentReports extentReports;
@@ -62,6 +64,8 @@ public class SampleTest {
 	public void tearDown(ITestResult result) {
 	  if(ITestResult.FAILURE == result.getStatus()) {
 		  extentTest.fail(result.getThrowable().getMessage());
+		  String path = Utility.getScreenshotPath(driver);
+		  extentTest.addScreenCaptureFromPath(path);
 	  }
 	 
 		driver.close();
