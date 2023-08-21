@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScripts.LoginPageTest">
+      <class name="task.LoginCogmento">
         <methods>
-          <include name="validLogin" invocation-numbers="0 1 2"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="logintoPage"/>
         </methods>
-      </class> <!-- testScripts.LoginPageTest -->
+      </class> <!-- task.LoginCogmento -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
