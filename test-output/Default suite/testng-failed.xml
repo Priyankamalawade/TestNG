@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="task.LoginCogmento">
+      <class name="testScripts.CDPTest">
         <methods>
-          <include name="tearDown"/>
+          <include name="basicAuthTest"/>
           <include name="setUp"/>
-          <include name="logintoPage"/>
         </methods>
-      </class> <!-- task.LoginCogmento -->
+      </class> <!-- testScripts.CDPTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
