@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScripts.CDPTest">
+      <class name="remoteScripts.RemoteDriverTest">
         <methods>
-          <include name="basicAuthTest"/>
-          <include name="setUp"/>
+          <include name="remoteTest"/>
         </methods>
-      </class> <!-- testScripts.CDPTest -->
+      </class> <!-- remoteScripts.RemoteDriverTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
